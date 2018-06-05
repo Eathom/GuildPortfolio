@@ -1,0 +1,17 @@
+com\sg\dvdlibrary\dao\DvdDaoStubImpl.class
+com\sg\dvdlibrary\App.class
+com\sg\dvdlibrary\dao\DvdDaoFileImpl.class
+com\sg\dvdlibrary\service\DvdServiceLayer.class
+com\sg\dvdlibrary\service\DvdServiceLayerImpl.class
+com\sg\dvdlibrary\ui\UserIOConsoleImpl.class
+com\sg\dvdlibrary\dao\DvdDao.class
+com\sg\dvdlibrary\service\DvdNotFoundException.class
+com\sg\dvdlibrary\ui\DvdView.class
+com\sg\dvdlibrary\ui\UserIO.class
+com\sg\dvdlibrary\dao\DvdAuditDaoImpl.class
+com\sg\dvdlibrary\dao\DvdAuditDao.class
+com\sg\dvdlibrary\dto\DVD.class
+com\sg\dvdlibrary\controller\DvdController.class
+com\sg\dvdlibrary\advice\DvdLoggingAdvice.class
+com\sg\dvdlibrary\service\DvdAlreadyExistsException.class
+com\sg\dvdlibrary\dao\DvdFilePersistenceException.class

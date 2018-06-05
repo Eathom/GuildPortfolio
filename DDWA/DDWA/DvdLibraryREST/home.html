@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DVD Library Page</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1> </h1>
+
+        <div class="row">
+            <ul class="list-group" id="errorMessages">
+                <!-- DYNAMICALLY INSERT LI ERROR MESSAGES HERE -->
+            </ul>
+        </div>
+
+        <!-- THIS ROW WILL CONTAIN THE SEARCH FORM DIV, THE EDIT FORM DIV, AND THE ADD FORM DIV -->
+        <div class="row">
+
+            <div id="dvdFormDiv">
+
+
+                <form class="form-horizontal" id="search-dvd-form" role="form">
+                    <div class="col-md-3 form-group">
+                        <button type="button" class="btn btn-default" onclick="createDvd()" role="button">Create DVD</button>
+                    </div>
+
+                    <div class="col-md-3 form-group">
+                        <button type="button" class="btn btn-default" onclick="search()" role="button"> Search</button>
+                    </div>
+
+                    <div class="col-md-3 form-group">
+                        <div class="col-md-10">
+
+                            <select class="form-control selectpicker" id="search-category" required>
+                                <option value="">Select Category</option>
+                                <!-- <option value="" selected disabled>Select Category</option> -->
+                                <option value="title">Title</option>
+                                <option value="year">Release Year</option>
+                                <option value="director">Director Name</option>
+                                <option value="rating">Rating</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 form-group">
+                        <div class="col-md-10">
+
+                            <input type="text" class="form-control" id="search-term" placeholder="Search Term" required/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+            <!--    EDIT FORM ========================================== -->
+            <div class="row">
+            <div id="editFormDiv" style="display:none">
+                <h1>Edit Dvd:
+                    <span id="editHeader"> </span>
+                </h1>
+                <hr/>
+                <form class="form-horizontal" id="edit-form" role="form">
+                    <div class=" form-group">
+                        <label for="edit-title" class="control-label.text-left col-md-2">Title: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control" id="edit-title" required/>
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="edit-year" class="control-label.text-left col-md-2">Release Year: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control col-md-8" id="edit-year" pattern="^\d{4}$" required/>
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="edit-director" class="control-label.text-left col-md-2">Director: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control col-md-8" id="edit-director" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit-rating" class="control-label.text-left col-md-2">Rating: </label>
+                        <div class="col-md-1">
+                            <select class="selectpicker form-control col-md-8" id="edit-rating">
+                                <option>G</option>
+                                <option>PG</option>
+                                <option>PG-13</option>
+                                <option>R</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edit-notes" class="control-label.text-left col-md-2"> Notes: </label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" rows="6" id="edit-notes"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-1">
+                            <input type="hidden" id="edit-dvdId">
+                             <button type="button" class="btn btn-default" role="button" onclick="cancelEdit()"> Cancel </button>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-default" role="button" onclick="saveEdit()">Save Changes</button>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+
+            <!--    ADD FORM ========================================== -->
+            <div id="addFormDiv" style="display: none">
+                <h1>Create Dvd:
+                  </h1>
+                <hr/>
+                <form class="form-horizontal" id="add-form" role="form">
+                    <div class=" form-group">
+                        <label for="add-title" class="control-label.text-left col-md-2">Title: </label>
+                        <div class="col-md-4">
+                            <input type= "text" class="form-control" id="add-title" placeholder="Enter Title" required/>
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="add-year" class="control-label.text-left col-md-2">Release Year: </label>
+                        <div class="col-md-4">
+                            <input type= "text" class="form-control col-md-8" id="add-year" pattern="^\d{4}$" placeholder="Enter Release Year" required/>
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="add-director" class="control-label.text-left col-md-2">Director: </label>
+                        <div class="col-md-4">
+                            <input type= "text" class="form-control col-md-8" id="add-director" placeholder="Enter Director" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add-rating" class="control-label.text-left col-md-2">Rating: </label>
+                        <div class="col-md-1">
+                            <select class="form-control col-md-8" id="add-rating">
+                                <option>G</option>
+                                <option>PG</option>
+                                <option>PG-13</option>
+                                <option>R</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="add-notes" class="control-label.text-left col-md-2"> Notes: </label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" rows="6" id="add-notes" placeholder="Enter Notes"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-default" role="button" onclick="cancelAdd()"> Cancel </button>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-default" role="button" onclick="addDvd()">Create DVD</button>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+
+            <!-- DISPLAY A DVD WITH ALL DETAILS    ======================================- -->
+
+            <div id="displayFormDiv" style="display:none">
+                <h1>
+                    <span id="displayHeader"> </span>
+                </h1>
+                <hr/>
+                <form class="form-horizontal" id="display-form" role="form">
+                    <div class=" form-group">
+                        <label for="display-title" class="control-label.text-left col-md-2">Title: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control" id="display-title" />
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="display-year" class="control-label.text-left col-md-2">Release Year: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control col-md-8" id="display-year" pattern="^\d{4}$" />
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="display-director" class="control-label.text-left col-md-2">Director: </label>
+                        <div class="col-md-4">
+                            <input type- "text" class="form-control col-md-8" id="display-director" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="display-rating" class="control-label.text-left col-md-2">Rating: </label>
+                        <div class="col-md-1">
+                            <select class="form-control col-md-8" id="display-rating">
+                                <option>G</option>
+                                <option>PG</option>
+                                <option>PG-13</option>
+                                <option>R</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="display-notes" class="control-label.text-left col-md-2"> Notes: </label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" rows="6" id="display-notes"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-default" role="button" onclick="goBack()"> Back </button>
+                        </div>
+
+                    </div>
+
+
+
+                </form>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <hr/>
+
+        <!--      TABLE INFORMATION                                     -->
+
+        <div class="row">
+            <div id="tableDiv">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Release Date</th>
+                            <th>Director</th>
+                            <th>Rating</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="contentRows">
+
+                        <!--   INFO DYNAMICALLY INSTERTED HERE AS <TR> <TD> TEXT</TD> </TR>   -->
+                    </tbody>
+
+                </table>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

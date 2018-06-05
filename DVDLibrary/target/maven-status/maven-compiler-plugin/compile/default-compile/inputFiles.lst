@@ -1,0 +1,17 @@
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\service\DvdServiceLayer.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\ui\UserIO.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdDao.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\advice\DvdLoggingAdvice.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\service\DvdServiceLayerImpl.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdAuditDaoImpl.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dto\DVD.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\App.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\service\DvdAlreadyExistsException.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdFilePersistenceException.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\ui\UserIOConsoleImpl.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdAuditDao.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\service\DvdNotFoundException.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdDaoStubImpl.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\controller\DvdController.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\ui\DvdView.java
+C:\repos\bitbucket\elizabeth-thompson-individual-work\DVDLibrary\src\main\java\com\sg\dvdlibrary\dao\DvdDaoFileImpl.java

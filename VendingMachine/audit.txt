@@ -1,0 +1,85 @@
+2017-12-26T11:12:57.153:test added.
+2017-12-26T11:17:54.354:test removed.
+2017-12-26T11:24:41.245:test added.
+2017-12-26T11:28:41.449:test removed.
+2017-12-26 11:31:26 : test added.
+2017-12-26 11:38:17 : Faz fuzzies purchased. 
+2017-12-26 11:40:22 : Faz fuzzies added.
+2017-12-26 11:57:03 : golden candy purchased. 
+2017-12-26 11:58:11 : test purchased. 
+2017-12-26 11:59:02 : test purchased. 
+2017-12-26 11:59:37 : test purchased. 
+2017-12-26 12:00:19 : test purchased. 
+2017-12-26 07:11:51 : Faz fuzzies purchased. 
+2017-12-26 07:12:37 : Chica's cupcakes purchased. 
+2017-12-26 07:14:45 : Bonnie's Berries purchased. 
+2017-12-26 07:15:12 : Freddy's Hawaiian Pizza purchased. 
+2017-12-26 07:15:37 : Faz fuzzies purchased. 
+2017-12-26 07:20:07 : golden candy added.
+2017-12-26 07:21:03 : gold candy added.
+2017-12-26 07:21:41 : gold candy added.
+2017-12-26 07:22:21 : golden candy purchased. 
+2017-12-26 07:26:06 : gold candy removed.
+2017-12-28 11:03:55 : Bonnie's Berries purchased. 
+2017-12-30 12:59:45 : test removed.
+2017-12-30 03:48:39 : candy purchased. 
+2017-12-30 03:48:52 : Chica's cupcakes added.
+2017-12-30 03:49:25 : Faz Fuzzies added.
+2017-12-30 03:50:06 : Bonnie's Berries added.
+2017-12-30 03:50:24 : Bonnie's Berries purchased. 
+2017-12-30 03:51:16 : candy purchased. 
+2017-12-30 06:42:28 : candy purchased. 
+2018-01-05 03:03:52 : candy purchased. 
+2018-01-05 03:04:11 : candy purchased. 
+2018-01-05 03:05:09 : apple added.
+2018-01-05 03:05:20 : apple purchased. 
+2018-01-06 08:55:48 : foz berries added.
+2018-01-06 08:56:27 : candy purchased. 
+2018-01-19 12:38:34 : addItem: Item: Foz Fuzzies |Amount available: 25 |Price: 3
+2018-01-19 12:38:49 : addItem: Item: Freddy's Hawaiian Pizza |Amount available: 5 |Price: 15
+2018-01-19 12:39:03 : addItem: Item: Chica's Cupcakes |Amount available: 18 |Price: 4
+2018-01-19 01:29:18 : addItem: Item: Foz Berries |Amount available: 45 |Price: 0.25
+2018-01-19 01:29:38 :  |Exception: com.sg.vendingmachine.service.VMInsuffFundsException: Not enough funds added, empty those pocketeses. |Item Requested: buyItem: Foz Berries0.10
+2018-01-19 01:29:49 : buyItem: Foz Berries5.10
+2018-01-19 01:30:13 : addItem: Item: Golden Gummy |Amount available: 1 |Price: 100
+2018-01-19 01:30:23 : buyItem: Golden Gummy100
+2018-01-19 01:30:35 :  |Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |Item Requested: buyItem: Golden Gummy1
+2018-01-19 01:40:23 :  |Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!!
+2018-01-19 01:43:14 :  |Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!!buyItem: Golden Gummy4
+2018-01-19 01:50:54 :  |Exception: Not enough funds added, empty those pocketeses.buyItem: candy3
+2018-01-19 02:05:32 : addItem: Item: Golden Gummy |Amount available: 1 |Price: 4
+2018-01-19 02:05:41 : buyItem: Golden Gummy4
+2018-01-19 02:05:47 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: Golden Gummy3
+2018-01-19 02:07:36 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: Golden Gummy4
+2018-01-19 02:12:06 : Exception: com.sg.vendingmachine.service.VMInsuffFundsException: Not enough funds added, empty those pocketeses. |buyItem: foz1
+2018-01-19 02:12:11 : buyItem: foz6
+2018-01-19 02:12:18 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: foz4
+2018-01-19 02:14:52 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: foz 4
+2018-01-19 02:20:37 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: foz
+2018-01-19 02:23:19 : Exception: com.sg.vendingmachine.service.VMNoItemInvException: Out of stock!! |buyItem: foz
+2018-01-19 02:26:13 : Exception: class com.sg.vendingmachine.service.VMNoItemInvException Out of stock!! |buyItem: foz
+2018-01-19 02:26:56 : Exception: class com.sg.vendingmachine.service.VMNoItemInvException Out of stock!! |buyItem: foz
+2018-01-19 02:28:58 : Exception: null Out of stock!! |buyItem: foz
+2018-01-19 02:38:02 : NoItemInvException thrown:  Out of stock!! |buyItem: fox
+2018-01-19 02:38:21 : NoItemInvException thrown:  Out of stock!! |buyItem: fox
+2018-01-19 02:38:35 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:09:56 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:20:13 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:35:13 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:37:26 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:37:36 : buyItem: candy74
+2018-01-20 12:39:37 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy
+2018-01-20 12:39:41 : buyItem:  candy 8
+2018-01-20 12:58:56 : addItem:  Item: Foz Fuzzies |Amount available: 45 |Price: 1
+2018-01-20 12:59:05 : buyItem:  Foz Fuzzies 1
+2018-01-20 12:59:11 : buyItem:  candy 54
+2018-01-20 01:06:54 : addItem: com.sg.vendingmachine.service.VMServiceLayer Item: Golden freddy |Amount available: 1 |Price: 100
+2018-01-20 01:07:33 : buyItem: com.sg.vendingmachine.service.VMServiceLayer Golden freddy 100
+2018-01-20 01:08:07 : buyItem:  candy 8
+2018-01-20 01:52:44 : buyItem:  candy 51
+2018-01-22 08:27:12 : addItem:  Item: Golden Freddy |Amount available: 1 |Price: 100
+2018-01-22 08:27:23 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: Golden Freddy
+2018-01-22 08:27:36 : buyItem:  Golden Freddy 101
+2018-01-28 08:05:45 : buyItem:  candy 10
+2018-02-01 06:36:10 : buyItem:  candy 12
+2018-02-01 06:36:41 : InsuffFundsException thrown:  Not enough funds added, empty those pocketeses. |buyItem: candy

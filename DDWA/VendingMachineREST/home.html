@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Vending Machine</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center"> Vending Machine</h1>
+        <hr/>
+        <div class="col-md-9">
+            <ul id="items" style="list-style-type: none; padding: 0px; margin: 0px">
+                <!-- dynamically add list items with divs as bordered boxes -->
+
+            </ul>
+
+        </div>
+        <!-- RIGHT SIDE COLUMN ===================== -->
+        <div class="col-md-3">
+
+            <!--       MONEY IN FORM =========================================-->
+            <div class="row">
+                <h3 class="text-center">Total $ In</h3>
+                <form role="form" id="money-in-form" class="form-horizontal">
+                    <div class="row form-group">
+                        <div class="col-md-offset-3 col-md-6">
+                            <input type="text" class="form-control" id="money-display" value=0 name="Money $ In" readonly="readonly" required/>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <button type="button" class="btn btn-default col-md-5 " id="add-dollar" onclick="addDollar()">
+                            Add Dollar
+                        </button>
+                        <button type="button" class="btn btn-default col-md-offset-2 col-md-5" id="add-quarter" onclick="addQuarter()">
+                            Add Quarter
+                        </button>
+                    </div>
+                    <div class="row form-group">
+                        <button type="button" class="btn btn-default col-md-5" id="add-dime" onclick="addDime()">
+                            Add Dime
+                        </button>
+                        <button type="button" class="btn btn-default col-md-offset-2 col-md-5" id="add-nickel" onclick="addNickel()">
+                            Add Nickel
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+            <hr/>
+
+
+            <!-- MESSAGES AND PURCHASE FORM -=============================-->
+
+            <div class="row">
+                <h3 class="text-center">Messages</h3>
+                <form role="form" id="messages-form" class="form-horizontal">
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control " id="messages-display" />
+                        </div>
+
+                    </div>
+                    <div class="row form-group">
+                        <label for="item-selected" class="control-label col-md-2">Item: </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="item-selected" name="Please select an item." required/>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <button type="button" class="btn btn-default col-md-offset-2 col-md-8" id="make-purchase" onclick="makePurchase()">
+                            Make Purchase
+                        </button>
+
+                    </div>
+
+                </form>
+            </div>
+            <hr/>
+
+            <!-- CHANGE FORM ======================================= -->
+
+            <div class="row">
+                <h3 class="text-center"> Change</h3>
+                <form role="form" id="change-form" class="form-horizontal">
+
+                    <div class="row form-group">
+                        <div class="col-md-offset-3 col-md-6">
+                            <textarea class="form-control" id="change-display" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <button type="button" class="btn btn-default col-md-offset-3 col-md-6" id="change-return" onclick="changeReturn()">
+                            Change Return
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

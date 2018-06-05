@@ -1,0 +1,59 @@
+2018/02/25 10:31:12:addOrder:2001-01-01Order No: 3 Name: nancy State: oh Tax Rate: %6.25 Material: carpet Area: 454 Material/sq ft $2.25 Labor/sq ft: $2.10 Material total: $1021.50 Labor total: $953.40 Tax Total: $123.43 Total: $2098.33
+2018/02/25 10:31:35:editOrder:2001-01-01Order No: 3 Name: nancy State: mi Tax Rate: %5.75 Material: carpet Area: 454 Material/sq ft $2.25 Labor/sq ft: $2.10 Material total: $1021.50 Labor total: $953.40 Tax Total: $113.56 Total: $2088.46Order No: null Name:  State: mi Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018-02-27T11:12:18.585:com.sg.flooringmastery.service.NoOrderExistsException: No orders exist on 2045-04-01No orders exist on 2045-04-01|getOrdersOnDate:2045-04-01
+2018/02/27 11:16:54:addOrder:1945-02-03Order No: 4 Name: tom State: in Tax Rate: %6.00 Material: tile Area: 443345 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1551707.50 Labor total: $1839881.75 Tax Total: $203495.36 Total: $3595084.61
+2018/02/27 11:33:44:editOrder:1945-02-03Order No: 4 Name: tom State: in Tax Rate: %6.00 Material: wood Area: 443345 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $2283226.75 Labor total: $2105888.75 Tax Total: $263346.93 Total: $4652462.43Order No: null Name:  State:  Tax Rate: %null Material: wood Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 12:38:18:addOrder:2001-01-01Order No: 5 Name: Alicia State: pa Tax Rate: %6.75 Material: wood Area: 45 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $231.75 Labor total: $213.75 Tax Total: $30.07 Total: $475.57
+2018/02/27 12:39:07:editOrder:2001-01-01Order No: 5 Name: Alicia State: pa Tax Rate: %6.75 Material: wood Area: 45 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $231.75 Labor total: $213.75 Tax Total: $30.07 Total: $475.57Order No: null Name:  State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 12:39:32:com.sg.flooringmastery.service.FMNoOrderExistsException: No orders exist on 2002-01-02No orders exist on 2002-01-02|getOrdersOnDate:2002-01-02
+2018/02/27 12:40:08:addOrder:2001-03-01Order No: 5 Name: Bill State: IN Tax Rate: %6.00 Material: carpet Area: 45 Material/sq ft $2.25 Labor/sq ft: $2.10 Material total: $101.25 Labor total: $94.50 Tax Total: $11.75 Total: $207.50
+2018/02/27 12:40:41:addOrder:2001-03-01Order No: 6 Name: Bart State: pa Tax Rate: %6.75 Material: tile Area: 45 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $157.50 Labor total: $186.75 Tax Total: $23.24 Total: $367.49
+2018/02/27 12:40:58:com.sg.flooringmastery.service.FMNoOrderExistsException: No orders exist on 1023-01-04No orders exist on 1023-01-04|getOrder:1023-01-041
+2018/02/27 12:41:23:removeOrder:2001-03-015y
+2018/02/27 12:41:54:addOrder:2001-03-01Order No: 7 Name: Molly State: oh Tax Rate: %6.25 Material: tile Area: 456 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1596.00 Labor total: $1892.40 Tax Total: $218.03 Total: $3706.43
+2018/02/27 12:42:26:addOrder:2001-03-01Order No: 8 Name: Tiffany State: MI Tax Rate: %5.75 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $199.70 Total: $3672.80
+2018/02/27 12:48:40:correctBadOrder:2001-01-01Order No: 9 Name: Brit State: oh Tax Rate: %6.25 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $217.07 Total: $3690.17Order No: null Name: Brit State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 12:49:17:addOrder:2001-01-01Order No: 9 Name: Brit State: oh Tax Rate: %6.25 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $217.07 Total: $3690.17
+2018/02/27 12:49:28:commitChanges:
+2018/02/27 12:49:37:commitChanges:
+2018/02/27 12:53:27:editOrder:2001-01-01Order No: 3 Name: nancy State: mi Tax Rate: %5.75 Material: carpet Area: 454 Material/sq ft $2.25 Labor/sq ft: $2.10 Material total: $1021.50 Labor total: $953.40 Tax Total: $113.56 Total: $2088.46Order No: null Name:  State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 12:53:56:commitChanges:
+2018/02/27 12:57:39:com.sg.flooringmastery.service.FMNoOrderExistsException: No orders exist on 1999-04-05No orders exist on 1999-04-05|getOrdersOnDate:1999-04-05
+2018/02/27 01:00:22:correctBadOrder:2018-01-01Order No: 11 Name: Happy State: PA Tax Rate: %6.75 Material: wood Area: 345 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $1776.75 Labor total: $1638.75 Tax Total: $230.55 Total: $3646.05Order No: null Name:  State: PA Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 01:00:24:addOrder:2018-01-01Order No: 11 Name: Happy State: PA Tax Rate: %6.75 Material: wood Area: 345 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $1776.75 Labor total: $1638.75 Tax Total: $230.55 Total: $3646.05
+2018/02/27 01:01:52:editOrder:2018-01-01Order No: 11 Name: Sad State: PA Tax Rate: %6.75 Material: wood Area: 345 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $1776.75 Labor total: $1638.75 Tax Total: $230.55 Total: $3646.05Order No: null Name: Sad State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 01:02:04:commitChanges:
+2018/02/27 01:02:42:removeOrder:2001-01-013y
+2018/02/27 01:02:51:commitChanges:
+2018/02/27 01:04:49:removeOrder:1945-02-034y
+2018/02/27 01:04:55:commitChanges:
+2018/02/27 01:05:09:commitChanges:
+2018/02/27 01:05:13:commitChanges:
+2018/02/27 01:06:55:addOrder:1945-02-03Order No: 12 Name: john State: oh Tax Rate: %6.25 Material: wood Area: 1 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $5.15 Labor total: $4.75 Tax Total: $0.62 Total: $10.52
+2018/02/27 01:07:00:commitChanges:
+2018/02/27 01:07:05:commitChanges:
+2018/02/27 01:07:37:commitChanges:
+2018/02/27 01:20:57:removeOrder:1945-02-0312
+2018/02/27 01:21:01:commitChanges:
+2018/02/27 01:23:10:No orders exist on 1933-03-03|getOrdersOnDate:1933-03-03
+2018/02/27 01:24:22:com.sg.flooringmastery.service.FMNoOrderExistsException: No orders exist on 1933-03-03|getOrdersOnDate:1933-03-03
+2018/02/27 01:24:24:commitChanges:
+2018/02/27 01:26:48:addOrder: 2001-01-01 Order No: 13 Name: Layla State: mi Tax Rate: %5.75 Material: wood Area: 344 Material/sq ft $5.15 Labor/sq ft: $4.75 Material total: $1771.60 Labor total: $1634.00 Tax Total: $195.82 Total: $3601.42
+2018/02/27 01:27:03:removeOrder: 2001-01-01 13
+2018/02/27 01:27:05:commitChanges:
+2018/02/27 01:28:13:addOrder: |2001-01-01 |Order No: 14 Name: Tony State: pa Tax Rate: %6.75 Material: laminate Area: 45 Material/sq ft $1.75 Labor/sq ft: $2.10 Material total: $78.75 Labor total: $94.50 Tax Total: $11.69 Total: $184.94
+2018/02/27 01:28:30:removeOrder: |2001-01-01 |14
+2018/02/27 01:28:33:commitChanges:
+2018/02/27 01:29:39:commitChanges:
+2018/02/27 01:30:05:editOrder: | 2001-01-01 | Order No: 9 Name: Brittany State: oh Tax Rate: %6.25 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $217.07 Total: $3690.17 | Order No: null Name: Brittany State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/02/27 01:30:08:commitChanges:
+2018/03/02 10:05:26:editOrder: | 2001-03-01 | Order No: 6 Name: Barney State: pa Tax Rate: %6.75 Material: tile Area: 45 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $157.50 Labor total: $186.75 Tax Total: $23.24 Total: $367.49 | Order No: 0 Name: Barney State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/03/02 10:05:43:commitChanges:
+2018/03/02 10:14:36:commitChanges:
+2018/03/06 02:41:07:commitChanges:
+2018/03/06 03:06:52:com.sg.flooringmastery.service.FMNoOrderExistsException: No orders exist on 2002-02-02|getOrdersOnDate:2002-02-02
+2018/03/06 03:08:01:correctBadOrder: | 2001-01-03 | Order No: 13 Name: Liz State: MI Tax Rate: %5.75 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $199.70 Total: $3672.80 | Order No: 0 Name: Liz State:  Tax Rate: %null Material:  Area: null Material/sq ft $null Labor/sq ft: $null Material total: $null Labor total: $null Tax Total: $null Total: $null
+2018/03/06 03:08:12:addOrder: | 2001-01-03 | Order No: 13 Name: Liz State: MI Tax Rate: %5.75 Material: tile Area: 454 Material/sq ft $3.50 Labor/sq ft: $4.15 Material total: $1589.00 Labor total: $1884.10 Tax Total: $199.70 Total: $3672.80
+2018/03/06 03:09:33:removeOrder: | 2001-01-03 | 13
+2018/03/06 03:09:49:commitChanges:
+2018/03/06 03:20:26:commitChanges:

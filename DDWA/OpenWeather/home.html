@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Page</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Weather Page</h1>
+        <hr/>
+        <!--          ERROR MESSAGES                   -->
+        <ul id="errorMessages" class="list-group">
+
+        </ul>
+
+
+
+        <!--                INPUT FORM                    -->
+        <div class="row" id="weatherFormDiv">
+            <form id="weather-form" class="form-row" role="form">
+                <div class="form-group">
+                    <label for="zipcode" class="col-md-offset-2 col-md-1 control-label">Zipcode: </label>
+                    <div class="col-md-2">
+                        <input type="text" pattern="^\d{5}$" class="form-control" id="zipcode" placeholder="Enter 5 digit zipcode" required/>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="unit" class="col-md-1 control-label">Units:</label>
+                    <div class="col-md-2">
+                        <select class="form-control" id="units">
+                            <option>Imperial</option>
+                            <option>Metric</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-default col-md-2" id="get-weather-button" onclick="getWeather()"> Get Weather</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div style="display: none" id="weatherDisplay">
+
+            <!--       CURRENT CONDITIONS                                        -->
+            <div class="row" id="currentWeatherDiv">
+                <hr/>
+                <h2 id="cityName"> </h2>
+                <div class="col-md-3" id="currentImage">
+                    <p> </p>
+                </div>
+                <div class="col-md-3">
+                    <ul id="currentList">
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!--                FIVE DAY FORECAST                        -->
+            <div class="row" id="fiveDayDiv">
+                <hr/>
+                <h2> Five Day Forecast</h2>
+
+
+                <div class="col-md-2 text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p id="day-0-date"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p id="day-0-pic"> </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p id="day-0-descrip"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p id="day-0-weather"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="day-1-date"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p id="day-1-pic"> </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p id="day-1-descrip"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="day-1-weather"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 text-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="day-2-date"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p id="day-2-pic"> </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p id="day-2-descrip"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="day-2-weather"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 text-center">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="day-3-date"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p id="day-3-pic"> </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p id="day-3-descrip"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="day-3-weather"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="day-4-date"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p id="day-4-pic"> </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="day-4-descrip"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="day-4-weather"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+               
+
+               
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

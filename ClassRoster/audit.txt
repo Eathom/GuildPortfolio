@@ -1,0 +1,8 @@
+2018-01-13 12:20:11 : createStudent: ID: 991 |Name: Lizz Myers |Cohorot: java
+2018-01-13 12:21:46 : createStudent: ID: 3243 |Name: Sally Jones |Cohorot: .net
+2018-01-13 12:22:03 : removeStudent: 3243
+2018-01-13 12:23:13 : createStudent: ID: 9191 |Name: Test Test |Cohorot: test
+2018-01-13 12:25:10 : createStudent: ID: 09 |Name: Sally Fields |Cohorot: cal
+2018-01-13 12:27:40 : createStudent: ID: 0303 |Name: Nathan Thompson |Cohorot: MN
+2018-01-13 12:32:17 : createStudent: ID: 4343 |Name: Thom Hanks |Cohorot: java
+2018-01-13 12:35:04 : removeStudent: 2

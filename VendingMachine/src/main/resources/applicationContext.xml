@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- Bean definitions go here -->
+ <bean id="userIO" class="com.sg.vendingmachine.ui.VMUserIOConsoleImpl"/>
+ 
+ <bean id="view" class="com.sg.vendingmachine.ui.VMView">
+     <constructor-arg ref="userIO"/>
+ </bean>  
+ 
+ <bean id="dao" class="com.sg.vendingmachine.dao.VMDaoFileImpl"/>
+ 
+ <bean id="service" class="com.sg.vendingmachine.service.VMServiceLayerImpl">
+     <constructor-arg ref="dao"/>
+ </bean>
+ 
+ <bean id="controller" class="com.sg.vendingmachine.controller.VMController">
+     <constructor-arg ref="view"/>
+     <constructor-arg ref="service"/>
+ </bean>
+ <bean id="audit" class="com.sg.vendingmachine.dao.VMAuditDaoFileImpl"/>
+ 
+ 
+ <bean id="loggingAdvice" class="com.sg.vendingmachine.advice.VMLoggingAdvice">
+     <constructor-arg ref="audit"/>
+ </bean>
+ 
+ <aop:config>
+     <aop:aspect ref="loggingAdvice">
+         <aop:after-returning
+         method="createAuditEntry"
+         pointcut="execution(* com.sg.vendingmachine.service.VMServiceLayer.buyItem(..))"/>
+          <aop:after-returning
+         method="createAuditEntry"
+         pointcut="execution(* com.sg.vendingmachine.service.VMServiceLayer.removeItems(..))"/>
+           <aop:after-returning
+         method="createAuditEntry"
+         pointcut="execution(* com.sg.vendingmachine.service.VMServiceLayer.addItem(..))"/> 
+           
+        <aop:after-throwing
+        pointcut="execution(* com.sg.vendingmachine.service.VMServiceLayer.buyItem(..))"
+        throwing="exc"
+         method="createAuditExcEntry"/>
+     </aop:aspect>
+     
+     
+ </aop:config>
+</beans>
